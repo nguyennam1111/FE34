@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>San Joquin Vallen Town Hall </title>
+    <Link rel ="shortcut icon" href ="picture/icon">
+</head>
+<body>
+    <Header>
+        <img src ="picture/chuky.jpg" alt="chuky" withd ="50">
+        <h2>Celebrating on 75<sup>th</sup>Year</h2>
+        <h1>Our mission</h1>
+    </Header>   
+    <main> 
+        <p>San Joquin Valley Town is non-profit organization that is run</p>
+        <blockquote> Each year I give a ticket package to each our family members. I think off it as gift of knownledge... and </blockquote>
+        <h1>Our ticket package</h1>
+        <ul>
+            <li>Season package:&dollar;95</li>
+            <li>patron package:&dollar;200</li>
+            <li>Single speaker:&dollar;25</li>
+        </ul>
+        <br>
+        <h1>This season&rsquo;s guest speakers</h1>
+        <h3>October: <a href="speaker/toolbin.html">Jeffrey Toolbin </a></h3>
+        <img src ="picture/chuky.jpg" alt="chuky" withd ="50">
+        
+    </main>
+    <footer>
+        <p>&copy;2018 San Joaquin Valley Town, Fresno, CA 93755.</p>
+    </footer>
+</body>
+</html>
