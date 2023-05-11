@@ -12,10 +12,11 @@ const app = $('app')
 const stores = []
 
 class Material {
-    constructor(code, name, qty, ob) {
+    constructor(code, name, qty, inventory, ob) {
         this.code = code;
         this.name = name;
         this.qty = qty
+        this.inventory=inventory
         this.outbound = ob
 
     }
@@ -77,6 +78,7 @@ class Material {
         $row.appendChild($td(this.code))
         $row.appendChild($td(this.name))
         $row.appendChild($td(this.qty))
+        $row.appendChild($td(this.inventory))
         $row.appendChild($td(this.outbound))
         action.appendChild(btnedit(index))
         action.appendChild(btndelete(index))
@@ -95,7 +97,7 @@ const showInbound = (list = stores) => {
     })
 }
 const addMaterial = function () {
-    const eq = new Material($code.value, $name.value, $qty.value, 0)
+    const eq = new Material($code.value, $name.value, $qty.value, 0,0)
     if (stores.length == 0) {
 
         stores.push(eq)
@@ -108,12 +110,12 @@ const addMaterial = function () {
             } else { alert('materials name not same exit name') }
         } else stores.push(eq)
     }
-    localStorage.setItem(stores, JSON.stringify('stores'))
+    localStorage.setItem('stores', JSON.stringify('stores'))
 }
 const outbound = () => {
     const index = stores.findIndex($e => $e.code == $code.value)
 
-    const oldQty = parseFloat(stores[index].qty)
+    let oldInventory = parseFloat(stores[index].qty)
 
     if (oldQty == 0) {
         alert('Empty in stock')
@@ -123,7 +125,7 @@ const outbound = () => {
         else {
             let currentob = parseInt(stores[index].outbound)
             stores[index].outbound = currentob + parseInt($qty.value)
-            stores[index].qty = oldQty - parseInt($qty.value)
+            stores[index].inventory = oldInventory - parseInt($qty.value)
         }
     } else { alert('Outbound quantity not correct') }
 }
@@ -207,3 +209,4 @@ localData.forEach(ls => {
     }
 })
 
+showInbound()
