@@ -93,15 +93,12 @@ class Borrow {
                         $cancel.remove()
                         btnsubmit.action = 'add'
                         btnsubmit.textContent = 'Submit'
-
                     }
                     btnsubmit.parentNode.appendChild($cancel)
                 }
             }
             return $edit
         }
-
-
         const action = $td()
         action.appendChild(btndelete(index))
         action.appendChild(btnedit(index))

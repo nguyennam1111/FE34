@@ -1,0 +1,30 @@
+.todo-list-header {
+  &_display {
+    display: flex;
+  }
+
+  &_title {
+    text-align: center;
+    margin: auto;
+  }
+  &_task {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    &-input {
+      width: 600px;
+      padding: 10px 10px;
+      ::placeholder {
+        color: gray;
+      }
+    }
+    &-btnAdd {
+      margin-left: 5px;
+    }
+  }
+  &_divider {
+    border-bottom: 3px solid black;
+  }
+}

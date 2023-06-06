@@ -1,0 +1,23 @@
+.form{
+    display: block;
+    max-width: 800px;
+    border: 1x solid yellow;
+    box-shadow: 4px 4px 4px rgba(0 0 0 .5);
+    padding: 20px 50px;
+}
+.flex{
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 20px;
+   
+    /* justify-content: space-between; */
+}
+.form_item_label{
+    width: 200px;
+    text-align: right;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+.form_item_input{
+    width: calc(100%-200px);
+}

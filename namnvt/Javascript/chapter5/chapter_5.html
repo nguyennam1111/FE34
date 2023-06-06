@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter5-FORM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .answer {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="container m-5">
+    <!-- <div class="container mt-5" title="container">
+        <input type="text" id="search" class="form-control">
+        <h1 class="text-center h1">FAQS</h1> -->
+    <!-- <div id="app"></div> -->
+    <!-- <h3 class="js-question">What is Lorem Ipsum?</h3>
+        <p class="answer ps-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h3 class="js-question">What is Lorem Ipsum?</h3>
+        <p class="answer ps-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h3 class="js-question">What is Lorem Ipsum?</h3>
+        <p class="answer ps-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
+    <!-- <form action="" method="get" id="form">
+                <input type="checkbox" name="input" id="input" value="default" placeholder="Email">
+                <button type="button" id="button" class="btn btn-secondary">Submit</button>
+            </form> -->
+    <!-- </div> -->
+    <div class="container"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="h2">Employee Info</h2>
+                </div>
+                <div class="card-body">
+                    <form action="" id="form">
+                        <div class="d-block">
+                            <label>
+                                <h6>Name</h6>
+                                <input type="text" id="fullname" class="form-control" placeholder="Full name">
+                                <p class="text-danger"></p>
+                            </label>
+                        </div>
+                        <div class="d-block">
+                            <label>
+                                <h6>Salary</h6>
+                                <input type="text" class="form-control mt-3" id="salary" placeholder="Salary">
+                                <p class="text-danger"></p>
+
+                            </label>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-primary" type="submit" id="submit" data-event="add">Add</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    <h4>Employees Salary&Tax</h4>
+                    <input type="text" id="search" placeholder="Search" style="width: 200px;" class="form-control">
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Salary</th>
+                                <th>Tax</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="app"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="chapter5.js"></script>
+</body>
+
+</html>

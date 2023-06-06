@@ -1,0 +1,47 @@
+
+// khai báo biến
+$bp_mobile:767px;
+$cl_red:rgb(255, 115, 0);
+@function getSize($s){
+    @return $s/16+'rem'
+}
+.clearfix{
+    &::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+header{
+    display: block;
+}
+nav{
+    display: flex;
+}
+a{
+    display: inline-block;
+}
+.class{
+    font-size: getSize(30);
+    @extend .clearfix
+}
+.banner{
+    display: flex;
+    @media screen and {max-width:$bp_mobile}{
+        display:block;
+    }
+        
+    }
+    &_img{
+        display: block;
+    }
+    &_title{
+        font-size: 20px;
+        line-height: 40px;
+        &-sub{
+            opacity: .5;
+        }
+    }
+    &_text{
+        background-color: $cl_red;
+    }

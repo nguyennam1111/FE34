@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Java-Script</title>
+</head>
+<body>
+    <form id="emai_form" name="email_form" action="join.html" method="get">
+        <div style="padding:20px">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div style="padding:20px">
+            <label for="firstname">FirstName</label>
+            <input type="text" name="firstname" id="firstName">
+        </div>
+        <div style="padding:20px">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastName">
+        </div>
+        <div style="padding:20px">
+            <button type="button" id="btnSubmit">submit</button>
+        </div>
+    </form>
+    <script>
+      
+        var $=function(id){return document.getElementById(id)};
+        var joinList=function(){
+           
+        var emailAdd=$("email").value;
+        var firstName1=$('firstName').value;
+        var lastName1=$('lastName').value;
+        var emailList=[];
+        if (emailAdd==""){alert("pls enter email");}
+        
+        else {emailList=emailAdd;
+            emailList+=emailList};
+        for(var i=1;i<=emailList.length; i++){
+               var show=emailList[i]+"";
+            alert(show);}
+        };
+    
+            $("btnSubmit").onclick=joinList;
+            $('email').focus();
+            
+           
+    
+
+        
+
+
+    </script>
+
+</body>
+</html>

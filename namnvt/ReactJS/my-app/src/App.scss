@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+.todo-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list-wrap {
+  margin: 0 10 px;
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 10px 20px;
+}
+
+.todo-list-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

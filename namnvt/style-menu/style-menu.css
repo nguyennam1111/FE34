@@ -1,0 +1,109 @@
+.nav_menu{
+    margin: 0;}
+.menu{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+.menu_item{
+    width: 20%;
+    line-height: 65px;
+    background-color: yellowgreen;
+    text-align: center;
+}
+.menu_item a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+   
+}
+.menu .menu_item:not(.sub-menu .menu_item)+.menu_item{
+    border-left: 1px solid red;
+}
+.sub-menu{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    /* height: 100vh; */
+    max-height: 0;
+    overflow: hidden;
+}
+.menu .menu_item::after{
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+.sub-menu .menu_item{
+    border-top: 1px solid red;
+}
+.menu .menu_item:hover>.sub-menu{
+    max-height: 100vh;
+    transition: ease-in-out .5s;
+}
+@media only screen and (max-width:767px){
+    .mobile-menu{
+        display: block;
+        position: fixed;
+        top:60px;
+        right: 60px;
+        width: 50px;
+        height: 60px;
+        border-radius: 10px;
+        background: rgba(128, 128, 128, 0.527);
+    }
+    .mobile-menu span{
+        position: absolute;
+        top:30px;
+        left:10px;
+        width: 30px;
+        height: 2px;
+        background: white;
+    }
+    .mobile-menu span:first-child{top:15px}
+    .mobile-menu span:nth-child(2){top:30px}
+    .mobile-menu span:last-child{top:45px}
+    .mobile-menu.active span:nth-child(2){display: none;}
+    .mobile-menu.active span:first-child{
+        top:30px;
+        transform: rotate(45deg);
+    }
+    .mobile-menu.active span:last-child{
+        top:30px;
+        transform: rotate(-45deg);
+    }
+    .mobile-menu.active +.nav_menu{
+        left: 0;
+    }
+    .nav_menu{
+        position: fixed;
+        top:50px;
+        left:-100%;
+        transition: ease-in-out .5s;
+        max-height: 100vh;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .menu{
+        flex-flow: column;
+        
+    }
+    .menu_item{width: 100%;}
+    .sub-menu{
+        position: static;
+        max-height: 100%;}
+   
+   
+    .menu .menu_item:not(.sub-menu .menu_item)+.menu_item{
+        border-left: none;
+        border-top: 1px solid red;
+    }
+}

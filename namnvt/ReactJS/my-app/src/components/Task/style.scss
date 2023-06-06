@@ -1,0 +1,68 @@
+table,
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) {
+  background-color: gray;
+}
+
+thead {
+  color: white;
+  font-weight: 400;
+  background-color: black !important;
+}
+.todo-list-body {
+  margin-top: 10px;
+  table-layout: auto;
+
+  &_task {
+    display: flex;
+    justify-content: space-between;
+
+    &_btn {
+      width: 30px;
+      margin-right: 5px;
+      font-size: 20px;
+      border: none;
+      background: none;
+
+      &-check {
+        color: rgb(82, 245, 7);
+        padding: 0;
+      }
+      &-edit,
+      &-del {
+        margin-right: 10px;
+      }
+    }
+    &_flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    &_index {
+      width: 20px;
+    }
+    &_content {
+      font-size: medium;
+      word-wrap: initial;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 500px;
+    }
+    &_status {
+      width: 100px;
+      text-align: center;
+    }
+    &_action {
+      text-align: center;
+    }
+  }
+  &_divider {
+    margin-top: 0;
+  }
+}

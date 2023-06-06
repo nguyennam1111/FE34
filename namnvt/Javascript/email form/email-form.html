@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email form</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="email-form.css">
+</head>
+<body>
+    <header>
+        <h1>this header is animate</h1>
+        <p id="slider">
+          
+        </p>
+    </header>
+    <h2>Please join our email list</h2>
+   
+        <form id="email_form" name="emai_form">
+            <div class="row mt-2 justify-content-start">
+                <label for="emailAdd1" class="col-12 col-md-6" style="text-align: right;width: 150px;">Email Address</label>
+                <div class="col-12 col-md-6">
+                    <input type="email" id="emailAdd1" >
+                    <span id="emailAdd1_error">*</span>
+                </div>
+                
+            </div>
+            <div class="row mt-2 justify-content-start">
+                <label for="emailAdd2" class="col-12 col-md-6" style="text-align: right;width: 150px;">Re-enter Email Address</label>
+                <div class="col-12 col-md-6">
+                    <input type="email" id="emailAdd2" >
+                    <span id="emailAdd2_error">*</span>
+                </div>
+            </div>
+            <div class="row mt-2 justify-content-start">
+                <label for="firstName" class="col-12 col-md-6" style="text-align: right;width: 150px;">First Name</label>
+                <div class="col-12 col-md-6">
+                    <input type="text" id="firstName" >
+                    <span id="firstName_error">*</span>
+                </div>
+            </div>   
+            <div class="row mt-2 justify-item-start">
+                
+                <button type="button" id="btnJoinlist" class="btn btn-primary col-12 col-md-6" style="width: 150px;">Join Our List</button>
+                <button type="button" id="btnCount" class="btn btn-secondary col-12 col-md-6" style="width: 150px;">Count email list</button>
+            </div>
+        </form>
+    
+    <!--  -->
+    <script src="../../css/bootstrap.min.js"></script>
+    <script src="joint_email_list.js"></script>
+</body>
+</html>

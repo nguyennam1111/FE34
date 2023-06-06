@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+header, footer, aside, section{
+    font-size: 50px;
+    color:white;
+    font-weight: 700;
+    border: 2x solid black;
+    padding: 20px;
+    background-color:yellow;
+    text-align: center;
+}
+header, footer{
+    width: 100%;
+
+}
+aside{width: 35%;
+float: left;}
+section{
+    width: 64%;
+    float: right;
+}
+footer{
+    clear: both;
+}
+@media screen and (max-width:768px)
+{
+    
+}

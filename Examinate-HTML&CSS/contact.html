@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>contact</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="header_bgn">
+        <a href="javascript:void(0)" class="mobile_menu" id="mobile_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <nav class="nav-menu">
+            <ul class="menu">
+                <li class="menu_item logo">
+                    <a href="#"><img src="Resource/images/logo.png" alt="logo" class="img_logo"></a>
+                    <a href="#">ZERO TYPE</a>
+                </li>
+                <li class="menu_item"><a href="Home">Home</a></li>
+                <li class="menu_item"><a href="Features">Features</a></li>
+                <li class="menu_item"><a href="News">News</a></li>
+                <li class="menu_item"><a href="About">About</a></li>
+                <li class="menu_item"><a href="Contact">Contact</a></li>
+                
+            </ul>
+            
+
+        </nav>
+    </header>
+    <main class="style_main">
+        <h2 class="contact_title">Contact</h2>
+        <div class="contact_section">
+            <p class="text_section text-contact">Our events provide a once in a life time opportunity 
+                for people to take part in life changing experiences,
+                 that raise a significant amount of money for charity. 
+                These experineces are further enhanced using our technology.
+            </p>
+            <form action="" method="post" class="contact_form">
+                <input type="text" name="text1" id="text1" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <div><textarea name="text_area" id="text_area"></textarea></div>
+                <button type="button" class="btn-contact">Send</button>
+
+            </form>
+        </div>
+    </main>
+    <footer>
+        <h6 class="text_foot">&copy;2023 zero Type. All Rights Reserved.</h6>
+        <div  class="foot_img">
+            <img src="Resource/images/-1.png" alt="">
+            <img src="Resource/images/-2.png" alt="">
+            <img src="Resource/images/-3.png" alt="">
+            <img src="Resource/images/-4.png" alt="">
+
+        </div>
+        
+
+    </footer>
+
+   
+    <script type="text/javascript">
+        document.getElementById('mobile_menu').onclick=function(){
+        if (this.classList.contains('active')) {
+                this.classList.remove('active')
+            } else {
+                this.classList.add('active')
+            }
+        }
+    </script>
+</body>
+</html>

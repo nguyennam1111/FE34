@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPG caculate</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="mpg.css">
+</head>
+<body>
+    <section>
+    <h1>Caculate miles per Galon</h1>
+    <form action="" method="get" class="mt-4 ms-4" id="form_mpg">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 mt-4 label-width">
+                <label for="miles">Miles Driveb</label>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 mt-4">
+                <input type="text" name="miles" id="miles">
+                <span id="milesError">*</span>
+            </div>
+       </div>
+        <div class="row">
+            <div  class="col-12 col-sm-6 col-md-6 mt-4 label-width">
+                <label for="galon">Gallon of Gas used</label>
+            </div>
+            <div  class="col-12 col-sm-6 col-md-6 mt-4">
+                <input type="text" name="galon" id="galon">
+                <span id="galonError">*</span>
+            </div>
+        </div>
+        <div class="row">
+            <div  class="col-12 col-sm-6 col-md-6 mt-4 label-width">
+                <label for="mpg">Mile per galon</label>
+            </div>
+            <div  class="col-12 col-sm-6 col-md-6 mt-4">
+                <input type="text" name="mpg" id="mpg" disabled>
+                
+            </div>
+        </div>
+         
+        <div class="row mt-4">
+            <span class="col-12 col-sm-4 label-width"></span>
+            <button type="button" class="btn btn-primary col-12 col-sm-4" id="caculate_mpg">Cacualte MPG</button>
+            <span class="col-12 col-sm-4"></span>
+        </div>
+        <div class="row mt-4">
+            <span class="col-12 col-sm-4 label-width"></span>
+            <button type="reset" class="btn btn-secondary col-12 col-sm-4" id="reset">Reset</button>
+            <span class="col-12 col-sm-4"></span>
+        </div>
+    </form>
+</section>
+<!-- <section id="faqs">
+    <h1>Javascript FAQS</h1>
+    <h2><a href="#">What is Javascript</a></h2>
+    <div>
+        <p>the  jjjjjjjj</p>
+    </div>
+    <h2><a href="#">What is jQuery</a></h2>
+    <div>
+        <p>kk k k k k k </p>
+    </div>
+    <h2><a href="#">Why is jQuery ... </a></h2>
+    <div>
+        <p>bgn p p p p p p p  p pp  p</p>
+    </div>
+</section> -->
+    <!-- javascript link-->
+    <script src="../../css/bootstrap.min.js"></script>
+    <script src="mpg.js"></script>
+</body>
+</html>

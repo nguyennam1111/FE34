@@ -300,16 +300,6 @@ let BCNN = function () {
                     }
 
                 }
-
-                // } else {
-                //     if (a < b)
-                //         for (let i = b; i <= c; i++) {
-                //             if (i % a == 0 && i % b == 0) {
-                //                 return i;
-                //                 break;
-                //             }
-                //         }
-
             }
         }
     } else { alert('not a number') }

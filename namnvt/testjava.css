@@ -1,0 +1,44 @@
+.test{
+  
+}
+.col{
+    padding-top:20px;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-gap:30px;
+    text-align: right;
+    align-items: center;
+}
+.col input{
+    padding:10px 10px
+}
+label{
+    text-align: right;
+}
+.col_test{
+    padding: 20px 40PX;
+}
+input{
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: blueviolet;
+}
+.col_test:last-child input{color: red;}
+input::placeholder{
+    color: red;
+}
+.table_test{
+    margin: 0 auto;
+    border: 1px solid green;
+    border-collapse:collapse;
+}
+th, td{
+    width: 100px;
+    padding:10px 10px;
+    text-align: center;
+    border: 1px solid red;
+}
+thead, tfoot{
+    background-color: aqua;}
+tr:nth-child(2n){background-color: chartreuse;}

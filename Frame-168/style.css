@@ -1,0 +1,73 @@
+*{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+}
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    margin: 0 0 53px 0;
+    font-size: 28px;
+    line-height: 64px;
+    text-align: center;
+    color: #1A3454;
+    text-shadow: 0px 16px 40px rgba(0, 0, 0, 0.16);
+}
+/* .our-team{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.team-member{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content:space-between;
+    width: 190px;
+}*/
+.team-member img{
+    width: 170px;
+    height: 170px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.team-member h2{
+    margin: 0;
+    width: 190px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #1A3454;
+}
+.team-member h3{
+    margin: 0;
+    width: 190px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+    color: #1A3454;
+    opacity: 0.7;
+} 
+.our-team{
+    display: grid;
+    grid-gap: 60px;
+    text-align: center;
+    margin-top: 55px;
+    padding: 0 90px;
+    grid-template-columns: repeat(4, 1fr);
+
+}

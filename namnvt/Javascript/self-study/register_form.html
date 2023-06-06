@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h1>Register for an Account</h1>
+    <form action="" method="get" id="form-register" class="row m-3" style="border: 1px solid green;">
+            <div class="col-md-6 mt-2" style="width: 300px;">
+                <label for="emailAddress" >Email:</label>
+            </div>  
+            <div class="col-md-6 mt-2">
+                <input type="email" name="emailAddress" id="emailAddress" placeholder="Enter email here" required>
+                <span>*</span>
+            </div>
+            <div class="col-md-6 mt-2">
+                <label for="phone"  >Phone:</label>
+            </div>  
+            <div class="col-md-6 mt-2">
+                <input type="text" name="phone" id="phone" placeholder="Enter your phone here">
+                <span>*</span>
+            </div>
+            <div class="col-md-6 mt-2">
+                <label for="country" >Country:</label>
+            </div>  
+            <div class="col-md-6 mt-2">
+               <select name="country" id="country">
+                <option value="">Please select your country</option>
+                <option value="VIE">VietNam</option>
+                <option value="USA">American</option>
+                <option value="EN">England</option>
+                <option value="MEX">Mexico</option>
+                <option value="...">...</option>
+               </select>
+                <span>*</span>
+            </div>
+
+            <div class="col-md-3 mt-2">
+                <label>Contactme by:</label>
+            </div>  
+            <div class="col-md-3 mt-2">
+
+                
+                <label ><input type="radio" name="contact" id="byText"> Text</label>
+            </div>
+            <div class="col-md-3 mt-2">
+
+                
+                <label ><input type="radio" name="contact" id="byEmail"> Email</label>
+            </div>
+            <div class="col-md-3 mt-2">
+
+                
+                <label><input type="radio" name="contact" id="none"> Don't contact me</label>
+            </div>
+            <!--  -->
+            <div class="col-md-6 mt-2">
+                <label for="" >Term of service:</label>
+            </div>  
+        
+            <div class="col-md-6 mt-2">
+                <label><input type="checkbox" name="term" id="term" class="px-2" checked> I accept</label>
+                <span>*</span>
+            </div>
+            <div class="col-md-6 mt-2">
+                <button type="button" id="btnRegister" class="btn btn-primary">Register</button>
+            </div>
+            <div class="col-md-6 mt-2">
+                <button type="button" id="btnReset" class="btn btn-secondary">Reset</button>
+            </div>
+            
+   
+    </form>
+    <!-- script here -->
+    <script src="../../css/bootstrap.min.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

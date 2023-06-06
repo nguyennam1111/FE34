@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter10</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="h2">Student</h2>
+                    </div>
+                    <div class="card-body">
+                        
+                        <input type="text" name="name" id="name" placeholder="Full Name"
+                            class="form-control mt-4">
+                        <p class="text-danger"></p>
+                        <input type="number" name="html" id="html" placeholder="HTML score"
+                            class="form-control mt-4">
+                        <p class="text-danger"></p>
+                        <input type="number" name="js" id="js" placeholder="JavaScript score"
+                            class="form-control mt-4">
+                        <p class="text-danger"></p>
+                        <input type="number" name="react" id="react" placeholder="React score"
+                            class="form-control mt-4">
+                        <p class="text-danger"></p>
+                        <input type="number" name="project" id="project" placeholder="Project score"
+                            class="form-control mt-4">
+                        <p class="text-danger"></p>
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" type="button" id="caculate">Caculate</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="h2">Student list</h2>
+
+                        </div>      
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th >Name</th>
+                                    <th>HTML</th>
+                                    <th>JavScript</th>
+                                    <th>ReAct</th>
+                                    <th>Project</th>
+                                    <th >Average</th>
+                                    <th>Rank</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="app">
+                                <tr><td colspan="9" class="text-center">No Items</td></tr>
+                            </tbody>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="../../css/bootstrap.min.js"></script>
+    <script src="chapter10.js"></script>
+</body>
+</html>

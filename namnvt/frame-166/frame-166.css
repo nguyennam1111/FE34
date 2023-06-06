@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Sora';
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.banner-img{
+    max-width: 1492px;
+    background-image: url(picture/banner.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.register--login{
+    width: 1200px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 35px 33px;}
+
+.register, .loggin{
+    padding: 30px 45px 0 60px;
+    margin: 0;
+}
+.register{
+    border-right: 1px solid black;
+}
+.head-text{
+    margin: 0;
+    padding: 0 0 44px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+}
+.input-title{
+    font-weight: 700;
+    padding-bottom: 14px;
+}
+.input-form{
+    margin-bottom: 40px;
+}
+.input-form:placeholder-shown{
+    font-weight: 400;
+}
+.input-align{
+    padding:15px 17px;}
+.btn-submit{
+    padding: 14px 27px;
+    border: none;
+    background: #51B6FF;
+    border-radius: 8px;
+    color:white;
+}
+.btn-cancel{
+    color:white;
+    padding: 14px 27px;
+    border: none;
+    background: #B7BDC1;
+    border-radius: 8px;
+    /* margin-left: 20px; */
+}
+.btn-align{margin-top: 30px;}

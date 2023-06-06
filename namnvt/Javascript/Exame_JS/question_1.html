@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exame: Question 1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <form action="" id="form" type="submit">
+                <div class="card">
+                    <div class="card-header text-center">
+
+                        <h4 >Calculate monthly electric bill for customers</h4>
+                    </div>
+                    <div class="card-body">
+                        
+                        <label class=" row d-flex justify-content-between ">
+                            
+                                <h5 class="col-md-5">Start-up period</h5>
+                                <input type="number" name="start" id="start" class="form-control col-md-7 d-block">                           
+                            
+                            <p class="text-danger"></p>                  
+                        </label>
+                        <label class="row d-flex justify-content-between">
+                            <h5 class="col-md-5">End-of-term digit</h5>
+                            <input type="number" name="end" id="end" class="form-control col-md-7">
+                            <p class="text-danger"></p>
+                        </label>
+                        <label class=" row d-flex justify-content-between">
+                            <h5 class="col-md-5">The VATtax</h5>
+                            <input type="number" name="tax" id="tax" value="" placeholder="10%" class="form-control col-md-7" disabled>
+                          
+                        </label>
+                        <label class="row d-flex justify-content-between">
+                            <h5 class="col-md-5">The number of letters</h5>
+                            <input type="number" name="total" id="total" class="form-control col-md-7" disabled>
+                            
+                        </label>
+                        <label class=" row d-flex justify-content-between">
+                            <h5 class="col-md-5">The total amount payable</h5>
+                            <input type="number" name="amount" id="amount" class="form-control col-md-7" disabled>
+                            
+                        </label>
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary col-md-4" id="submit">Caculate electricity bill</button>
+                       
+                        
+                            <button type="reset" class="btn btn-secondary col-md-4" id="clear">Clear</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+   </div> 
+   <script src="question1.js"></script>
+</body>
+</html>

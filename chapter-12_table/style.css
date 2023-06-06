@@ -1,0 +1,17 @@
+th, td, tr{
+    text-align: center;
+    padding: 5px 10px;
+    border: 1x solid;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;}
+thead{
+    background-color: blue;
+}
+tr:nth-child(2n){
+    background-color: gray;
+}
+tbody tr:first-child td:not(:first-child){
+    background-color: yellow;
+}

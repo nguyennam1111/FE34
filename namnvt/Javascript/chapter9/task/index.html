@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter9</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <style>
+        #status+span::before {
+            content: 'Uncompleted'
+
+        }
+
+        #status:checked+span::before {
+            content: 'Completed'
+
+
+        }
+        .max-w-200{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="h2">Form</h2>
+                    </div>
+                    <div class="card-body">
+                        <input type="text" name="description" id="description" placeholder="Description"
+                            class="form-control mt-4">
+                        <p class="text-danger"></p>
+                        <input type="date" name="deadline" id="deadline" placeholder="Deadline"
+                            class="form-control mt-4">
+                        <p class="text-danger"></p>
+                        <label class="d-block mt-4">
+                            <input type="checkbox" name="status" id="status" class="me-2"><span></span>
+                        </label>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" type="button" id="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="h2">Task Manager</h2>
+                            <input type="text" name="search" id="search" placeholder="Search" class="form-control max-w-200">
+
+                        </div>
+
+                        
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th id="no">No</th>
+                                    <th id="descrip">Description</th>
+                                    <th id="sort_deadline" data-inc="">Deadline</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tasks">
+                                <tr><td colspan="5" class="text-center">No Items</td></tr>
+                            </tbody>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-secondary" id="filter">Filter</button>
+                        <button type="button" class="btn btn-danger" id="late">Late</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../../../css/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

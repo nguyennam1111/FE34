@@ -1,0 +1,18 @@
+h1{
+    animation: moveright 3s ease-in-out 2s infinite alternate;
+}
+@keyframes moveright{
+    from {margin-left: 20%;
+    color:blue}
+    to {margin-left: 60%;
+    color: red;}
+}
+h2{
+    font-size: 150%;
+    transition: font-size 2s ease-in-out 1s color 2s ease-in-out 1s;
+}
+h2:hover{
+    cursor: pointer;
+    font-size: 200%;
+    color: red;
+}

@@ -1,0 +1,74 @@
+body {
+font-family: 'Times New Roman', Times, serif;
+font-size: 100%;
+width: 900px auto;
+/* margin: 15px auto; */
+/* padding:15Px 1.5em; */
+border: 2px double green;
+border-radius: 10px;
+
+}
+
+a { 
+    font-weight: bold;
+    line-height: normal;
+   }
+a:link {color: blue;}
+a:visited{color: aquamarine;}
+a:hover{color: red;}
+
+ul{
+    line-height: 1.5;
+    border-style: dashed;
+    border: red;
+}
+li,p{font-size: 90%;}
+em{font-weight: bold;}
+/*stype fpr header*/
+img{
+    margin-right: 1em;
+}
+header{
+    /* padding-bottom: 1em; */
+    /* clear: both; */
+    border-bottom: 2px solid black;
+}
+header img{float:left  }
+header h2{
+    font-size: 200%;
+    color: green;
+    text-align: left;
+   /* text-indent: 2em; */
+    }
+header h3 {
+    font-size: 150%;
+    font-style: italic;
+   
+}
+/*style for main content*/
+main{
+    clear: left;
+    padding-left: 1.5em;
+    }
+#sideA{
+    width: 70%;
+    height: 700px;
+    float: left;
+    /* border-right: 1px solid black; */
+}
+#sideB{
+    width: 29%;
+    height: 700px;
+    float: right;
+    /* border-right: 1px solid black; */
+}
+footer{
+    clear: both;
+    font-size: 80;
+    text-align: right;
+    margin-top: 2em;
+    border-top: 2px solid gray;
+    /*padding-top: .7em;
+    background-color: aqua;*/
+}
+    

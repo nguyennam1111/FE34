@@ -1,0 +1,65 @@
+table,
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+
+tr:nth-child(even) {
+  background-color: gray;
+}
+
+thead {
+  color: white;
+  font-weight: 400;
+  background-color: black !important;
+}
+
+.todo-list-body {
+  margin-top: 10px;
+  table-layout: auto;
+}
+.todo-list-body_task {
+  display: flex;
+  justify-content: space-between;
+}
+.todo-list-body_task_btn {
+  width: 30px;
+  margin-right: 5px;
+  font-size: 20px;
+  border: none;
+  background: none;
+}
+.todo-list-body_task_btn-check {
+  color: rgb(82, 245, 7);
+  padding: 0;
+}
+.todo-list-body_task_btn-edit, .todo-list-body_task_btn-del {
+  margin-right: 10px;
+}
+.todo-list-body_task_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.todo-list-body_task_index {
+  width: 20px;
+}
+.todo-list-body_task_content {
+  font-size: medium;
+  word-wrap: initial;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 500px;
+}
+.todo-list-body_task_status {
+  width: 100px;
+  text-align: center;
+}
+.todo-list-body_task_action {
+  text-align: center;
+}
+.todo-list-body_divider {
+  margin-top: 0;
+}/*# sourceMappingURL=style.css.map */

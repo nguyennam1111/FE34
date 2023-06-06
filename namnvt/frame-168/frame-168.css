@@ -1,0 +1,347 @@
+*{
+    font-family: 'Poppins';
+  
+}
+body{
+    max-width: 1200px;
+
+}
+header{
+    position: relative;
+}
+.header-img{
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+    width: 100%;
+    z-index: -1;
+}
+.header-text{
+    
+    font-weight: 700;
+    font-size: 400%;
+    text-align: center;
+    color: #3C49BB;
+    text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:34px 44px;
+    /* white-space: nowrap; */
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 20px;
+}
+.nav-menu{
+    position: absolute;
+    top:0;
+    left: 0;
+   padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 10;
+}
+.menu{
+    padding: 45px 0;
+    background: rgba(30, 38, 51, 0.5);
+    width: 100%;
+}
+.menu .menu-item:first-child{
+    margin-left: 318px;
+}
+.menu-item{
+    text-align: center;
+    width: 12.5%;
+    line-height: 3.75rem;
+    background: linear-gradient(to bottom,rgba(112, 67, 221, 1),rgba(90, 181, 204, 1));
+    border-radius: 0px 0px 8px 8px;;
+}
+.menu-item a{
+    padding: 0;
+    font-weight: 400;
+    font-size: 30px;
+    color: #FFFFFF;
+
+}
+.toggler-poisition{
+    top: 40px;
+    left:40px;
+}
+.section-align{
+    margin:50px 0 0;
+}
+.head-section{
+    margin:0;
+    text-align: center;
+    text-shadow: 0px 16px 40px rgba(0, 0, 0, 0.16);
+}
+.head-section-1{
+    margin: 0 auto;
+    width: 57.7%;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.content-align{
+    padding:0;
+
+}
+.title-section{
+    margin: 0;
+    padding-top: 10%;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+    color: #1A3454;
+}
+.text-section{
+    margin: 0;
+    padding:3% 15% 0 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A3454;
+}
+
+ 
+
+
+.img-head{
+    display: block;
+    object-fit: cover;
+    padding: 6.67% 0 0;
+    width: 690px;
+    max-width: 100%;
+}
+.head-section-2{
+    
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #3C49BB;
+
+}
+.head-section-3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 229%;
+    color: #1A3454;
+}
+.img-tech{
+
+    display: block;
+    object-fit: contain;
+    padding:59px 0 0;
+    width: 100%;
+}
+
+/* body{max-width: 1200px;} */
+/* .row-justify{
+    justify-content: space-between;
+   
+} */
+.profile{
+    width: 190px;
+    padding: 0;
+    margin-bottom: 40px;
+}
+.profile-img{
+    display: block;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    margin: 0 auto ;
+}
+.name{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    padding-top: 16px;
+}
+.job-title{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.help-section{
+    display: block;
+    width: 98%;
+    /* position: relative; */
+    background-image: url(picture/Mask\ Group.png);
+    background-size: cover;
+}
+.img-help{
+    width: 98%;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.help-section_child{
+    padding-top: 64px;
+    margin: 0;
+    
+}
+.sub-img-help{
+    display: block;
+    width: 154px;
+    height:154px;
+    object-fit: contain;
+    margin: 0 auto;
+    padding: 0;
+}
+.title-help{
+    margin:0 auto ;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 112%;
+    text-align: center;
+    color: #FFFFFF;
+    
+}
+.sub-title-help{
+    margin: 0 auto;
+    padding-top:15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    white-space: nowrap;
+
+}
+.help-column_width{
+    padding: 0;
+    width: 20%;
+}
+.text-help{
+    margin: 0;
+    padding-top:5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 138%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.btn-help{
+    display: block;
+    padding: 9px 16px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5A50CC;
+    background: #FFFFFF;
+    border-radius: 8px; 
+    margin: 16px auto 50px;
+}
+
+.submission{
+    clear: both;
+    padding: 0;
+    width: 94%;
+    margin:134px auto 0;
+    border: 1px solid rgba(90, 80, 204, 1);
+    border-radius:20px ;
+    align-items: center;
+    
+    justify-content: space-between;
+    
+}
+.email-text{
+    color: rgba(90, 80, 204, 1);
+    font-weight: 700;
+}
+.title-submission{
+    padding: 0;
+    line-height: 60px;
+    color: #000000;
+}
+.text-submission{
+    color: #000000;
+}
+.submission-form{
+    padding: 100px 32px 100px 16px;
+   
+}
+.form-text::placeholder, .form-text{
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #000000;
+}
+.text{
+    margin: 0;
+    margin:24px auto;
+    font-weight: 500;
+}
+.under_line{
+    
+    color: rgba(90, 80, 204, 1);
+}
+.input-text-align {
+    padding:10px 16px !important;
+}
+
+.name-input{width: 45%;}
+.input-align{padding-bottom: 28px;
+    margin: 0;
+
+}
+
+.check-box-align{margin: 0 12px 8px;}
+
+.textarea-align{
+    margin: 35px auto;
+}
+
+.btn-get_in_touch{
+    padding: 9px 30px;
+    background:linear-gradient(to bottom right, #5AB5CC, #6F42DC);
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F9FFFF;
+    margin-top: 24px;
+}
+.order{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.order div:nth-of-type(1){
+    order:2;
+}
+.order img:nth-of-type(2){
+    order:1;
+}
+
+@media only screen and (max-width:767px){
+    .menu .menu-item:first-child{
+        margin-left: 0;
+    }
+    .menu{
+        padding:0;}
+    .menu-item{
+        width: auto;
+    }
+    .help-column_width{width: 80%;}
+    .name-input{width: 100%;}
+    .order div:nth-of-type(1){
+        order:1;
+    }
+    .order img:nth-of-type(2){
+        order:2;
+    }
+    
+}

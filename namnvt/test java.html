@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>java-script</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="java-script">
+    <meta name="keywords" content="java, coding">
+    <link rel="stylesheet" href="testjava.css">
+    
+</head>
+<body>
+    <h1>tdis is first time Java Script</h1>
+    <p id="demo">test</p>
+    
+    
+    <form action="" class="">
+        <div class="col_test">
+            <label for="A">Number A</label><br>
+            <input type="number" name="A" id="a" placeholder="input number" title="enter the number" required>
+        </div>
+        <div class="col_test">
+            <label for="B">Number B</label><br>
+            <input type="number" name="B" id="b" placeholder="input number" title="Enter the number" required>
+        </div>
+        
+        <div class="col_test">
+            <label for="C">Number C =A*B</label><br>
+            <input type="number" name="C" id="c" value="" placeholder="Result of A*B">
+        </div>
+        <div>
+            <textarea name="comment" id="submit_comment" maxlengtd="200" widtd="200px" placeholder="give your comment here."></textarea>
+        </div>
+        
+    </form>
+    <button type="button" onclick="myFunction()">click</button>
+
+    <p id="plus"></p>
+    <br>
+    
+    <table class="table_test">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Year</th>
+                    <th>Job Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><span id="name"></span></td>
+                    <td><span id="lastname"></span></td>
+                    <td>2019</td>
+                    <td>Lop 4</td>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen</td>
+                    <td>tdanh Nhan</td>
+                    <td>2019</td>
+                    <td>Lop 4</td>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen</td>
+                    <td>tdanh Nhan</td>
+                    <td>2019</td>
+                    <td>Lop 4</td>
+
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen</td>
+                    <td>tdanh Nhan</td>
+                    <td>2019</td>
+                    <td>Lop 4</td>
+
+                </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td colspan="3">testing</td>
+                </tr>
+            </tfoot>
+    </table>
+    <h3 onload="setProgressAndMeter()">Onload progress</h3>
+    <progress id="progressBar" max="100" value="0"></progress>
+    <p>meterset onload</p>
+    <meter id="meterBar" max="100" value="0" optimum="50" high="60"></meter>
+
+
+    <script>
+    
+        
+        function myFunction(){
+        var a=document.getElementById('a').value;
+        var b=document.getElementById('b').value;
+        // if(a==""){ alert('Please enter A number or default is 0');
+        // document.getElementById('a').value="0"}
+        // else if(b==""){ alert('Please enter B number or default is 0');
+        // document.getElementById('b').value="0"}
+        // else{
+        // c=a*b;       }
+
+         if(a==""){ ;
+        document.getElementById('a').value=prompt('Please enter A number', 0)}
+        else if(b==""){prompt('Please enter B number', 0);
+        document.getElementById('b').value=prompt('Please enter B number', 0)}
+        else{
+        c=a*b;       }
+        document.getElementById("demo").innerHTML= "My First JavaScript";
+        alert("This is first time JavaScript")
+        document.getElementById('plus').innerHTML="tde number of a*b is" +c;
+        
+        document.getElementById('c').value=c;
+        document.getElementById('name').innerHTML=a
+        document.getElementById('lastname').innerHTML=b
+        }
+        
+        // function setProgressAndMeter(){
+        //     var progress=document.getElementById("progressBar");
+        //     setInterval(setProgressAndMeter,900)
+        //     progress.value+=10;
+        //     var progress=document.getElementById('meterBar');
+        //     setInterval(setProgressAndMeter,900)
+        //     meter.value+=10;
+        // }
+    </script>
+</body>
+</html>

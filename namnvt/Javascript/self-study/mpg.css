@@ -1,0 +1,31 @@
+.h1{
+   animation: moveright 3s ease-in-out 2s infinite alternate;}
+    @keyframes moveright {
+        from {
+            margin-left:10%;
+            color:red;
+        }
+        to {
+            margin-left:90%;
+            color:yellow;
+        }
+    }
+
+
+/* .label-width{
+    width: 30%;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+h2{
+    padding:20px 40px;
+    cursor: pointer;
+    background:url(../../travel-agent/picture/Vector\ 3.png) no-repeat left center;}
+h2.minus{
+    background:url(../../travel-agent/picture/Vector\ 2.png) no-repeat left center;
+}
+div{display: none;
+padding: 20px 40px;}
+div.open{display: block;} */
